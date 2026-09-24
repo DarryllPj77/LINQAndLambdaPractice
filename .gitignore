@@ -1,0 +1,55 @@
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build folders
+bin/
+obj/
+out/
+
+## Rider
+.idea/
+
+## VS Code
+.vscode/
+
+## Dotnet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+*.snupkg
+
+## NuGet
+**/packages/*
+
+## Azure DevOps
+.tfstate
+
+## OS generated files
+.DS_Store
+Thumbs.db
+
+## User-specific files
+*.pidb
+*.log
+*.vspscc
+*.vssscc
+
+## JetBrains
+*.dotCover
+
+## Deploy
+*.Publish.xml
+
+## Test results
+TestResults/
+
+## Local tool settings
+*.local
+
+## Visual Studio Code workspace history
+.history/
