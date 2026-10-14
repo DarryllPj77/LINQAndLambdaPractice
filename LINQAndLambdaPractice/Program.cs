@@ -16,7 +16,7 @@ namespace LINQAndLambdaPractice
 
             List<int> numbers = new List<int>()
             {
-                1,2,3,4,5,6,7
+                1,2,3,4,5,6,7,11,23,15,27
             };
 
             // Using foreach and if-else
@@ -24,7 +24,7 @@ namespace LINQAndLambdaPractice
             var evenNumbers = new List<int>();
             foreach (var number in numbers)
             {
-                if(number % 2 == 0)
+                if (number % 2 == 0)
                 {
                     evenNumbers.Add(number);
                 }
@@ -56,6 +56,44 @@ namespace LINQAndLambdaPractice
             {
                 Console.WriteLine(even);
             }
+
+            // Get OddNumbers 
+            var oddNumber = numbers.Where(number => number % 2 != 0);
+            Console.WriteLine("\nUsing Lambda for Getting odd numbers");
+            foreach (var odd in oddNumber)
+            {
+                Console.WriteLine(odd);
+            }
+
+            // Get numbers greater than 10
+
+            var numberGreaterThanTen = numbers.Where(number => number > 10);
+            Console.WriteLine("\nUsing Lambda for getting numbers greater than 10");
+            foreach (var num in numberGreaterThanTen)
+            {
+                Console.WriteLine(num);
+            }
+
+            // Get Students name that start with "D"
+
+            List<string> students = new List<string>()
+            {
+                "Darryll",
+                "Janssen",
+                "Hanz",
+                "Dani",
+                "Kurohama"
+            };
+
+            var studentsWithD = students.Where(student => student.StartsWith("D"));
+            //var studentsWithD = students.Where(student => student.Contains("D"));
+            Console.WriteLine("\nUsing Lambda for getting Students name that start with 'D' ");
+            foreach (var name in studentsWithD)
+            {
+                Console.WriteLine(name);
+            }
+
+            var testStudent = n
         }
     }
 }
