@@ -1,4 +1,4 @@
-# [Insert Project Name Here]
+# [LINQAndLambdaPractice]
 
 Summary
 -------
